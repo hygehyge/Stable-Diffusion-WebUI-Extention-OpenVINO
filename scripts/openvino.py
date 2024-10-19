@@ -1291,8 +1291,11 @@ class Script(scripts.Script):
             s = scripts.scripts_txt2img.title_map['accelerate with openvino extension']
         else:
             s = scripts.scripts_img2img.title_map['accelerate with openvino extension']
+        print(s)
+        print(p)
         start = s.args_from
         end = s.args_to
+        print(start, end)
         print(p.script_args[start-14:start])
         enabled, model_config, vae_ckpt, openvino_device, override_sampler, sampler_name, enable_caching, override_hires, upscaler, hires_steps, d_strength, is_xl_ckpt, refiner_ckpt, refiner_frac = \
             p.script_args[start-14:start]
