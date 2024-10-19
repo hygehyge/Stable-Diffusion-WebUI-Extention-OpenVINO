@@ -1288,9 +1288,9 @@ class Script(scripts.Script):
     
     def run(self, p: StableDiffusionProcessing, *kargs):
         if self.is_txt2img:
-            s = scripts.scripts_txt2img.title_map['ov extension template']
+            s = scripts.scripts_txt2img.title_map['accelerate with openvino extension']
         else:
-            s = scripts.scripts_img2img.title_map['ov extension template']
+            s = scripts.scripts_img2img.title_map['accelerate with openvino extension']
         start = s.args_from
         end = s.args_to
         print(p.script_args[start-14:start])
